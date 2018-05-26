@@ -31,7 +31,7 @@
 			echo 'A divisão dos números digitados é: ', $num1 / $num2 . PHP_EOL;
 			break;
 		default:
-			echo 'Inválido' . PHP_EOL;;
+			echo 'Inválido' . PHP_EOL;
 			break;
 	}
 
