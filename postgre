@@ -1,0 +1,19 @@
+CREATE TABLE usuarios(
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR (200) NOT NULL,
+	email VARCHAR (150) NOT NULL UNIQUE,
+	senha VARCHAR (200) NOT NULL
+);
+
+CREATE TABLE posts(
+	id SERIAL PRIMARY KEY,
+	titulo VARCHAR (150) NOT NULL UNIQUE,
+	conteudo TEXT,
+	criado_em TIMESTAMP DEFAULT NOW(),
+	publicado BOOLEAN DEFAULT FALSE,
+	usuario_id iNT NOT NULL REFERENCES usuarios(id)	
+
+);
+
+INSERT INTO usuarios(nome, email, senha) VALUES('Amarildo Queiroz Moreira', 'amarildoqueirozm@hotmail.com', 123456)
+);
