@@ -3,8 +3,8 @@
 require 'conexao.php';
 
 $nome = 'Amarildo Queiroz';
-$email = 'amarildoqueirozm@hotmail.com.br';
-$senha = '131416';
+$email = 'amarildoqueirozm@hotmail.com';
+$senha = '123456';
 $id = 2;
 
 $query = "UPDATE usuarios SET nome='{$nome}', email='{$email}', senha='{$senha}' WHERE id={$id}";
